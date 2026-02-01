@@ -67,6 +67,10 @@ address {
   font-style: normal;
 }
 
+input {
+  font-family: inherit;
+}
+
 .section {
   padding: 120px 0;
 }
@@ -642,6 +646,7 @@ margin-left: 80px;
 
 
 .footer-input{
+  padding: 8px 0 8px 16px;
   width: 265px;
   height: 40px;
   border: 1px solid #FFFFFF;
@@ -649,13 +654,22 @@ margin-left: 80px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #2E2F42;
+  color: #ffffff;
+}
+
+.footer-input::placeholder{
+  color: #ffffff;
+}
+
+.footer-input:focus{
+  border-color: #31D0AA;
 }
 
 .footer-input:hover,
 .footer-input:focus
 .footer-input:active{
   border-color: #31D0AA;
-
 }
 
 .footer-button{
@@ -683,4 +697,110 @@ margin-left: 80px;
 .footer-button:hover,
 .footer-button:focus{
 background-color: var(--hover-footer);
+}
+
+
+
+.modal-overlay{
+background-color:  rgba(46, 47, 66, 0.4);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+z-index: 999;
+display: flex;
+justify-content: center;
+align-items: center;
+/* opacity: 0;
+pointer-events: none;
+transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+/* .modal-overlay.is-open{
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+.modal{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+ padding: 72px 24px 24px 24px;
+
+}
+
+.modal-close-btn{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  
+}
+
+.modal-title{
+  height: 24;
+  opacity: 1;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #2E2F42;
+  margin-bottom: 16px;
+}
+
+.modal-label{
+  display: block;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.form-control{
+  position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-form{
+  display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+}
+
+.modal-input{
+  width: 360;
+    height: 58;
+}
+
+.modal-btn{
+  max-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: var(--Primary-Brand);
+}
+
+.privacy-pcolicy{
+  font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 4%;
+}
+
+.Priv-Pol{
+  color: #31D0AA;
+  text-decoration: underline;
+  font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 4%;
+   
+   
 }
