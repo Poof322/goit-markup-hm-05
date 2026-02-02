@@ -69,6 +69,7 @@ address {
 
 input {
   font-family: inherit;
+  outline: none;
 }
 
 .section {
@@ -735,72 +736,116 @@ transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1); */
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  
+  cursor: pointer;
+  border: 1px solid #0000001A;
+  background-color: #E7E9FC; 
+  fill: #2E2F42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+  fill: #FFFFFF;
+  background-color: #404bbf;
+}
+
+
 .modal-title{
-  height: 24;
+  height: 24px;
   opacity: 1;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #2E2F42;
   margin-bottom: 16px;
 }
 
-.modal-label{
-  display: block;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: #757575;
-    margin-bottom: 4px;
-}
-
-.form-control{
-  position: relative;
-    margin-bottom: 10px;
-}
-
 .modal-form{
-  display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 8px;
+  
+
 }
 
-.modal-input{
-  width: 360;
-    height: 58;
+.modal-form-label{
+
+ 
+}
+
+.modal-form-label-title{
+  font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-form-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-text{
+  width: 360px;
+  height: 120px;
+}
+
+.modal-form-input{
+ width: 100%;
+padding: 8px 0 8px 38px;
+border: 1px solid #2E2F4266;
+border-radius: 4px;
+}
+
+.modal-form-input:focus .modal-form-icon {
+  fill: #4d5ae5 ;
+  border-color: #4d5ae5;
+}
+
+.modal-form-icon{
+ position: absolute;
+  top: 12px;
+  left: 17px;
+  fill: var(--primary-title);
+}
+
+.modal-form-text{
+  width: 100%;
+}
+
+.modal-form-title-link{
+ font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.04em;
+}
+
+.modal-form-link{
+
 }
 
 .modal-btn{
-  max-width: 169px;
+  display: block;
+  margin: 0 auto;
+  width: 169px;
   height: 56px;
-  padding: 16px 32px;
-  background-color: var(--Primary-Brand);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #E7E9FC;
+  background-color: #404bbf;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.privacy-pcolicy{
-  font-family: Roboto;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 4%;
-}
-
-.Priv-Pol{
-  color: #31D0AA;
-  text-decoration: underline;
-  font-family: Roboto;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 4%;
-   
-   
-}
