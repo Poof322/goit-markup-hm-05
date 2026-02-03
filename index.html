@@ -518,10 +518,10 @@
     </footer>
 
     <!-- Modal WIndow -->
-     <div class="modal-overlay">
+     <div class="modal-overlay .is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button" >
-          <svg width="8" height="8">
+          <svg width="8" height="8" >
             <use href="./images/icons.svg#icon-close">
             </use>
           </svg>
@@ -547,10 +547,10 @@
           
             
            
-              <label class="modal-form-label" id="#userphone">
+              <label class="modal-form-label" >
                   <p class="modal-form-label-title">Phone</p>
               <div class="modal-form-container">
-                <svg class="modal-form-icon" width="12" height="12">
+                <svg class="modal-form-icon " width="12" height="12">
                                 <use href="./images/icons.svg#icon-phone" >
                                 </use>
                               </svg>
@@ -573,23 +573,29 @@
               </label>
             
 
-            <div class="modal-form-container">
+           
               
               <label  class="modal-form-label" >
-                <p class="modal-form-label-title">Comment</p> 
-                <textarea class="modal-form-text" placeholder="Comment" style="resize: none;">
-                </textarea>
+                <p class="modal-form-label-title">Comment</p>
+                <div class="modal-form-container">
+                <textarea 
+                class="modal-form-text" 
+                name="feedback" 
+                placeholder="Text input" ></textarea>
+                  </div>
               </label>
-            </div>
-            <div class="modal-form-container">
-              <!-- <svg>
-                <use href="">
-                </use>
-              </svg> -->
+         
+                <label for="">
+            <div class="modal-form-container modal-checkbox ">
+              <input type="checkbox" style="opacity: 0;">
+              <svg width="16" height="16" >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             <p class="modal-form-title-link">
-              I accept the terms and conditions of the <a class="modal-form-link">Privacy Policy</a>
+              I accept the terms and conditions of the <a href="#" class="modal-form-link modal-form-title-link" >Privacy Policy</a>
             </p>
             </div>
+            </label>
             <button type="submit" class="modal-btn">
               Send 
             </button>
