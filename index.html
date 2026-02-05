@@ -597,22 +597,26 @@
         <form class="modal-form">
           <label class="modal-form-label" for="user-name"> Name </label>
           <div class="modal-form-container">
-            <svg class="modal-form-icon" width="12" height="12">
+            <span class="modal-wrapper">
+              <svg class="modal-form-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-human"></use>
             </svg>
+            </span>
             <input
               class="modal-form-input"
               type="text"
-              id="#user-name"
+              id="user-name"
               name="user-name"
             />
           </div>
 
           <label class="modal-form-label" for="user-phone">Phone</label>
           <div class="modal-form-container">
-            <svg class="modal-form-icon" width="12" height="12">
+            <span class="modal-wrapper">
+              <svg class="modal-form-icon" width="13" height="13">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
+            </span>
             <input
               class="modal-form-input"
               type="tel"
@@ -629,9 +633,11 @@
               name="user-email"
               id="user-email"
             />
-            <svg class="modal-form-icon" width="12" height="12">
+            <span class="modal-wrapper">
+              <svg class="modal-form-icon" width="15" height="13">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
+            </span>
           </div>
 
           <label class="modal-form-label" for="feedback">Comment</label>
@@ -649,7 +655,7 @@
             name="check-box"
             id="check-box"
             class="chekbox-input visually-hidden"
-            checked
+            
           />
           <label for="check-box" class="checkbox-label">
             <span class="checkbox-span">
