@@ -740,13 +740,13 @@ textarea {
 
 .modal-wrapper {
   position: absolute;
-  top: 8px;
+  top: 50%;
   left: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18px;
-  height: 24px;
+  transform: translateY(-50%);
+  
 }
 
 .modal-checkbox {
